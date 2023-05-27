@@ -1,8 +1,8 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import UserList from "./components/List";
-import HomePage from "./pages/HomePage";
 import CardPage from "./pages/CardPage";
+import HomePage from "./pages/HomePage";
+import ListPage from "./pages/ListPage";
 
 const router = createBrowserRouter(
     [
@@ -12,7 +12,7 @@ const router = createBrowserRouter(
         },
         {
             path: "/list-component",
-            element: <UserList />
+            element: <ListPage />
         },
         {
             path: "/card-page",
