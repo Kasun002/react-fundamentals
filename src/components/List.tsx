@@ -1,5 +1,5 @@
 import React from "react";
-import './_list.css';
+import './css/_list.css';
 
 const userList = [
     {

@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 const HomePage: React.FC = () => {
     return (
         <div>
-            <Link to="/list-component">List Component</Link>
+            <div>
+                <Link to="/list-component">List Component</Link>
+            </div>
+            <div>
+                <Link to="/card-page">Card Page</Link>
+            </div>
         </div>
     )
 }
