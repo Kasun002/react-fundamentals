@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import ListPage from "./pages/ListPage";
+import CounterPage from "./pages/CounterPage";
 
 const router = createBrowserRouter(
     [
@@ -17,6 +18,10 @@ const router = createBrowserRouter(
         {
             path: "/card-page",
             element: <CardPage />
+        },
+        {
+            path: "/counter-page",
+            element: <CounterPage />
         },
     ],
     { basename: '/react-fundamentals' }

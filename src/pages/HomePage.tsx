@@ -10,6 +10,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/card-page">Card Page</Link>
             </div>
+            <div>
+                <Link to="/counter-page">Counter Page</Link>
+            </div>
         </div>
     )
 }
