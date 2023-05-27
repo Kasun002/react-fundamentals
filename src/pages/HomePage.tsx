@@ -13,6 +13,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/counter-page">Counter Page</Link>
             </div>
+            <div>
+                <Link to="/nav-page">Nav Page</Link>
+            </div>
         </div>
     )
 }

@@ -4,6 +4,7 @@ import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import ListPage from "./pages/ListPage";
 import CounterPage from "./pages/CounterPage";
+import NavPage from "./pages/NavPage";
 
 const router = createBrowserRouter(
     [
@@ -22,6 +23,10 @@ const router = createBrowserRouter(
         {
             path: "/counter-page",
             element: <CounterPage />
+        },
+        {
+            path: "/nav-page",
+            element: <NavPage />
         },
     ],
     { basename: '/react-fundamentals' }
