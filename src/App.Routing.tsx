@@ -18,7 +18,8 @@ const router = createBrowserRouter(
             path: "/card-page",
             element: <CardPage />
         },
-    ]
+    ],
+    { basename: '/react-fundamentals' }
 );
 
 const AppRouter = () => {
