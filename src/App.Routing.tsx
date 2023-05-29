@@ -7,6 +7,8 @@ import ListPage from "./pages/ListPage";
 import NavPage from "./pages/NavPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductPage from "./pages/ProductPage";
+import ContextRoot from "./pages/context/ContextRoot";
+import ContextRootPage from "./pages/context/ContextRoot";
 
 const router = createBrowserRouter(
     [
@@ -37,6 +39,10 @@ const router = createBrowserRouter(
         {
             path: "/product-detail-page",
             element: <ProductDetailPage />
+        },
+        {
+            path: "/user-context-page",
+            element: <ContextRootPage />
         },
     ],
     { basename: '/react-fundamentals' }

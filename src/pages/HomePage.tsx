@@ -22,6 +22,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/product-detail-page">Product Detail (Submit general form)</Link>
             </div>
+            <div>
+                <Link to="/user-context-page">Context (Share the data between multiple component using context API)</Link>
+            </div>
         </div>
     )
 }
