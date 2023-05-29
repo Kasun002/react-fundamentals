@@ -1,11 +1,12 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import CardPage from "./pages/CardPage";
+import CounterPage from "./pages/CounterPage";
 import HomePage from "./pages/HomePage";
 import ListPage from "./pages/ListPage";
-import CounterPage from "./pages/CounterPage";
 import NavPage from "./pages/NavPage";
-import ProductList from "./components/ProductList";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import ProductPage from "./pages/ProductPage";
 
 const router = createBrowserRouter(
     [
@@ -31,7 +32,11 @@ const router = createBrowserRouter(
         },
         {
             path: "/product-list-page",
-            element: <ProductList />
+            element: <ProductPage />
+        },
+        {
+            path: "/product-detail-page",
+            element: <ProductDetailPage />
         },
     ],
     { basename: '/react-fundamentals' }

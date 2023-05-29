@@ -19,6 +19,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/product-list-page">Product List API Page</Link>
             </div>
+            <div>
+                <Link to="/product-detail-page">Product Detail (Submit general form)</Link>
+            </div>
         </div>
     )
 }

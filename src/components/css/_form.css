@@ -1,0 +1,51 @@
+.form {
+    /* Styles for the form container */
+}
+
+.form__group {
+    /* Styles for the form group (label + input/textarea) */
+    margin-bottom: 1rem;
+}
+
+.form__label {
+    /* Styles for the form label */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form__input {
+    /* Styles for the form input */
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.form__input--textarea {
+    /* Additional styles for the textarea input */
+    resize: vertical;
+}
+
+.form__group--button {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__button {
+    /* Styles for the form submit button */
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    /* Hover styles for the form submit button */
+    background-color: #0056b3;
+}
+
+.form__error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}

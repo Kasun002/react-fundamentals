@@ -21,3 +21,9 @@ export interface IProduct {
     website_url: string;
     state: string;
 }
+
+export interface IProductDetailForm {
+    name: string;
+    price: string;
+    description?: string;
+}
