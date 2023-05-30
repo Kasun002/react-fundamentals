@@ -3,7 +3,7 @@ import { getProducts } from "./productAPI";
 import { IProduct } from "../../../../interfaces/IProduct";
 
 export const productSlice = createSlice({
-    name: "employee",
+    name: "product",
     initialState: {
         list: {
             isLoading: false,
