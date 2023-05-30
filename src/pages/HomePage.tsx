@@ -25,6 +25,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/user-context-page">Context (Share the data between multiple component using context API)</Link>
             </div>
+            <div>
+                <Link to="/redux-page">API data share via redux-tool-kit</Link>
+            </div>
         </div>
     )
 }

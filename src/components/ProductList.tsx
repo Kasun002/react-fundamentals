@@ -1,16 +1,15 @@
 import React from 'react';
-import useFetchProducts from '../hooks/useProducts';
-import './css/_list.css';
+import { IProductList } from '../interfaces/IProduct';
 import PageLoader from './PageLoader';
+import './css/_list.css';
 
-const ProductList: React.FC = () => {
-    const { isLoading, data, error } = useFetchProducts();
+const ProductList: React.FC<IProductList> = ({ isLoading, data, error }) => {
 
     return (
         <>{isLoading ? <PageLoader /> : error ? <div>{error || JSON}</div> : (<>
             <h2>Product List (Got data from the API)</h2>
             <div className="user-list">
-                {data.map((product, index) => // Repeat list items using the map function
+                {data?.map((product, index) => // Repeat list items using the map function
                     <div key={`user-${index}`} className="user-list__item">
                         <div className="user-list__name">Product Name: {product.name}</div>
                         <div className="user-list__address">Product Type: {product.brewery_type}</div>

@@ -27,3 +27,9 @@ export interface IProductDetailForm {
     price: string;
     description?: string;
 }
+
+export interface IProductList { 
+    isLoading?: boolean;
+    data?: IProduct[];
+    error?: any;
+}
