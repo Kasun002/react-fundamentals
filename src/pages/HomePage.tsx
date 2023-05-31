@@ -28,6 +28,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/redux-page">API data share via redux-tool-kit</Link>
             </div>
+            <div>
+                <Link to="/router-page/457891">Access the router params</Link>
+            </div>
         </div>
     )
 }

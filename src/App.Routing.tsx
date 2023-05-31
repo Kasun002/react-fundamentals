@@ -9,6 +9,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductPage from "./pages/ProductPage";
 import ContextRootPage from "./pages/context/ContextRoot";
 import AppRedux from "./pages/redux/AppRedux";
+import GeneralRouting from "./pages/GeneralRouting";
 
 const router = createBrowserRouter(
     [
@@ -47,6 +48,10 @@ const router = createBrowserRouter(
         {
             path: "/redux-page",
             element: <AppRedux />
+        },
+        {
+            path: "/router-page/:id",
+            element: <GeneralRouting />
         },
     ],
     { basename: '/react-fundamentals' }
