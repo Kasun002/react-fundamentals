@@ -31,6 +31,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/router-page/457891">Access the router params</Link>
             </div>
+            <div>
+                <Link to="/scroll-pagination">React Scroll pagination</Link>
+            </div>
         </div>
     )
 }

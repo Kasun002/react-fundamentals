@@ -13,6 +13,7 @@ import ProductPage from "./pages/ProductPage";
 import RegisterPage from "./pages/Register";
 import ContextRootPage from "./pages/context/ContextRoot";
 import AppRedux from "./pages/redux/AppRedux";
+import PaginationPage from "./pages/scrollPagination/PaginationPage";
 
 const protectedRouter = createBrowserRouter(
     [
@@ -55,6 +56,10 @@ const protectedRouter = createBrowserRouter(
         {
             path: "/router-page/:id",
             element: <GeneralRouting />
+        },
+        {
+            path: "/scroll-pagination",
+            element: <PaginationPage />
         },
     ],
     { basename: '/react-fundamentals' }
