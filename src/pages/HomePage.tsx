@@ -34,6 +34,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/scroll-pagination">React Scroll pagination</Link>
             </div>
+            <div>
+                <Link to="/function-props">Pass callback function as props</Link>
+            </div>
         </div>
     )
 }
