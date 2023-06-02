@@ -15,6 +15,7 @@ import ContextRootPage from "./pages/context/ContextRoot";
 import AppRedux from "./pages/redux/AppRedux";
 import PaginationPage from "./pages/scrollPagination/PaginationPage";
 import FunctionPropsPage from "./pages/FunctionPropsPage";
+import LazyLoadPage from "./pages/LazyLoadPage";
 
 const protectedRouter = createBrowserRouter(
     [
@@ -65,6 +66,10 @@ const protectedRouter = createBrowserRouter(
         {
             path: "/function-props",
             element: <FunctionPropsPage />
+        },
+        {
+            path: "/lazy-page",
+            element: <LazyLoadPage />
         },
     ],
     { basename: '/react-fundamentals' }
