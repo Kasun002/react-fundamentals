@@ -16,6 +16,7 @@ import AppRedux from "./pages/redux/AppRedux";
 import PaginationPage from "./pages/scrollPagination/PaginationPage";
 import FunctionPropsPage from "./pages/FunctionPropsPage";
 import LazyLoadPage from "./pages/LazyLoadPage";
+import AppPokemon from "./pokemens-app/App.Pokemon";
 
 const protectedRouter = createBrowserRouter(
     [
@@ -71,6 +72,10 @@ const protectedRouter = createBrowserRouter(
             path: "/lazy-page",
             element: <LazyLoadPage />
         },
+        {
+            path: "/app-pokemon",
+            element: <AppPokemon />
+        }
     ],
     { basename: '/react-fundamentals' }
 );
