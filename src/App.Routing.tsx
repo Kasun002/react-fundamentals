@@ -73,7 +73,7 @@ const protectedRouter = createBrowserRouter(
             element: <LazyLoadPage />
         },
         {
-            path: "/app-pokemon",
+            path: "/app-pokemon/*",
             element: <AppPokemon />
         }
     ],
