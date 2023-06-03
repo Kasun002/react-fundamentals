@@ -41,6 +41,9 @@ const HomePage: React.FC = () => {
             <div>
                 <Link to="/lazy-page">This page is loading Components by using Lazy Loading</Link>
             </div>
+            <div>
+                <Link to="/app-pokemon">Pokemon APP</Link>
+            </div>
         </div>
     )
 }
