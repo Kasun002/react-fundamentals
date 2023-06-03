@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useAppDispatch } from '../redux/hooks';
+import { fetchPokemonsThunk } from '../redux/pokemons/PokemenThunkAPI';
 import PokemonRoute from './pokemen-route';
-// import { Presenter } from '@/components/app/Presenter';
-// import { useAppDispatch } from '@/store/hooks';
-// import { fetchPokemonsThunk } from '@/store/pokemons/thunk';
 
 const Pokemon: React.FC<NoProps> = () => {
-//   const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
 
-//   useEffect(() => {
-//     dispatch(fetchPokemonsThunk());
-//   }, [dispatch]);  
+  useEffect(() => {
+    dispatch(fetchPokemonsThunk());
+  }, [dispatch]);
 
   return <PokemonRoute />;
 };
