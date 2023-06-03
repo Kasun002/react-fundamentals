@@ -35,9 +35,12 @@ const userList = [
     }
 ];
 
-const ListPage: React.FC = () => {
+const ListPage = (): JSX.Element => {
     return (
-        <UserList users={userList} />
+        <>
+            <h2>User List</h2>
+            <UserList users={userList} />
+        </>
     )
 }
 
